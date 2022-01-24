@@ -6,6 +6,8 @@ output:
   html_document:
     toc: true
     toc_float: true
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -89,12 +91,12 @@ RMarkdown, since we will be using Rmds as the primary form of homework and
 assignments. With that in mind, your assignment for this homework is to:
 
 
-1) Fork the example repository into your personal GitHub
+1) Fork the example repository into your personal GitHub. Done
 
-2) Create an RStudio project from your Personal clone of the Repo. 
+2) Create an RStudio project from your Personal clone of the Repo. Done
 
 3) Create a table of contents that is floating, but displays three levels of
-headers instead of two (by editing the content at the beginning of the document)
+headers instead of two (by editing the content at the beginning of the document) 
 
 4) Make a version of the `dygraph` with points and lines by using rstudio's
 dygraph [guide](https://rstudio.github.io/dygraphs/)
@@ -104,7 +106,7 @@ dygraph [guide](https://rstudio.github.io/dygraphs/)
 is not vital, but try to at least make it true and interesting, and, of course,
 don't plagiarize. 
 
-6) Knit that document, and then git commit and push to your personal GitHub.
+6) Knit that document, and then git commit and push to your personal GitHub. TESTING TO SEE IF THIS WORKS
 
 7) Use the GitHub -> Settings -> Pages tab to create a website of your report.
 
