@@ -40,7 +40,7 @@ The Poudre River at Lincoln Bridge is:
 
 ## Data Acquisition and Plotting tests
 
-## Data Download
+### Data Download
 
 
 ```{r downloader}
@@ -55,8 +55,7 @@ q <- readNWISdv(siteNumbers = '06752260',
 ```
 
 
-
-## Static Data Plotter
+### Static Data Plotter
 
 
 ```{r, warning = FALSE, fig.width = 8, fig.height = 5}
@@ -69,7 +68,7 @@ ggplot(q, aes(x = Date, y = q)) +
 ```
 
 
-## Interactive Data Plotter
+### Interactive Data Plotter
 
 
 ```{r}
@@ -83,9 +82,8 @@ dygraph(q_xts) %>%
 
 
 
-# Assignment. 
-
-
+# Assignment 
+## Instructions
 This assignment will be primarily about demonstrating some expertice in using
 RMarkdown, since we will be using Rmds as the primary form of homework and 
 assignments. With that in mind, your assignment for this homework is to:
@@ -96,10 +94,10 @@ assignments. With that in mind, your assignment for this homework is to:
 2) Create an RStudio project from your Personal clone of the Repo. Done
 
 3) Create a table of contents that is floating, but displays three levels of
-headers instead of two (by editing the content at the beginning of the document) 
+headers instead of two (by editing the content at the beginning of the document). Done 
 
 4) Make a version of the `dygraph` with points and lines by using rstudio's
-dygraph [guide](https://rstudio.github.io/dygraphs/)
+dygraph [guide](https://rstudio.github.io/dygraphs/). Done
 
 5) Writing a paragraph on the Poudre river with at least three hyperlinks,
 **two bolded sections**, and one *italicized phrase*. The content of this paragraph
@@ -118,11 +116,22 @@ todays date, not just a static date you enter.
 
 
 
+## DyGraph example 
 
-## DyGraph example. 
+```{r}
+
+q_xts <- xts(q$q, order.by = q$Date)
+
+
+dygraph(q_xts) %>%
+  dyAxis("y", label = "Discharge (cfs)") %>% dyOptions(drawPoints = TRUE, pointSize = 2)
+```
 
 
 ## Poudre Paragraph
 
+testing this [hyperlink](https://www.nps.gov/places/cache-la-poudre-river-national-heritage-area.htm)
 
+and *italics*
+and **bold**
 
