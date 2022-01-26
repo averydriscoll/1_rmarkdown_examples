@@ -2,7 +2,7 @@
 title: "Discharge Data Example"
 author: "Code by Matthew Ross; homework by Avery Driscoll"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
-output:
+output: 
   html_document:
     toc: true
     toc_float: true
@@ -132,4 +132,8 @@ dygraph(q_xts) %>%
 
 ## Poudre Paragraph
 The Poudre River is a nationally designated [*Wild and Scenic River*](https://www.fs.usda.gov/recarea/arp/recarea/?recid=81605) with headwaters in Rocky Mountain National Park. The river runs through the Poudre Canyon in Roosevelt National Forest, north of Fort Collins, and eastward towards Greely where it flows into the South Platte River. It currently provides extensive **recreational opportunities** as well as water supply for **irrigation**. Since 2009, a 45-mile segment of the river corridor has been protected as a [National Heritage Area](https://www.nps.gov/places/cache-la-poudre-river-national-heritage-area.htm). This designation and the associated development of museums and historical sites was aimed at preserving the importance of the river to Colorado communities throughout history, from the [Northern Arapahoe](https://www.poudreheritage.org/water-legacy/) people to today's urban and agricultural water users. 
+
+## Link to revealjs presentation
+https://averydriscoll.github.io/1_rmarkdown_examples/index_talk.html#/
+
 
